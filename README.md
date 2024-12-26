@@ -1,1 +1,3 @@
-# MindEcho
+The Memory Card Matching Game is a fun and addictive puzzle game where you match pairs of cards with the same image. It's all about testing your memory and speed, as you try to flip the cards and remember their positions to make matches. Each level gets a bit harder, with more cards to match, so you really have to stay sharp!
+
+As you play, you'll earn points, level up, and keep track of your progress. The game has a simple, clean design that makes it easy to focus on the challenge, and the timer adds an exciting race against the clock. Whether you're looking for a quick mental workout or just want to relax and play, this game is perfect for anyone who loves a good memory challenge.
