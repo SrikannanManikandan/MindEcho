@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Matching Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="game-container">
+        <h1>MindEcho</h1>
+        <div class="stats">
+            <div>Level: <span id="level" class="highlight">1</span></div>
+            <div>Score: <span id="score" class="highlight">0</span></div>
+        </div>
+        <div class="timer">Time Left: <span id="timer">30</span>s</div>
+        <div class="progress-bar"><div id="progress"></div></div>
+        <div class="board" id="board"></div>
+        <p id="message" class="game-over"></p>
+        <p id="paused-message" class="paused-message">Game Paused</p>
+        <div class="controls">
+            <button id="pause-btn">Pause</button>
+            <button id="play-btn" disabled>Play</button>
+            <button id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

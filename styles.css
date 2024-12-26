@@ -1,0 +1,163 @@
+body {
+    background: url("f.png") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.game-container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #19c3f3;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.stats span {
+    color: #ffda79;
+    font-size: 30px;
+}
+
+.highlight {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ff0000;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #555;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar div {
+    height: 100%;
+    width: 0%;
+    background: #00ff7f;
+    transition: width 0.5s ease-in-out;
+}
+
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.card {
+width: 80px;
+height: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px; 
+border: 1px solid #ccc;
+cursor: pointer;
+border-radius: 12px;
+background: rgba(255, 255, 255, 0.8);
+transition: transform 0.6s, box-shadow 0.3s;
+position: relative;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+    background: #b3664bcf;
+    color: #fff;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 19px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.controls button:hover {
+    transform: scale(1.05);
+}
+
+#pause-btn {
+    background-color: #ffa726;
+    color: #fff;
+}
+
+#play-btn {
+    background-color: #26a69a;
+    color: #fff;
+}
+
+#restart-btn {
+    background-color: #e57373;
+    color: #fff;
+}
+
+.game-over {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-top: 20px;
+    animation: fadeInOut 3s ease-in-out;
+}
+
+.paused-message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-top: 20px;
+    display: none;
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
